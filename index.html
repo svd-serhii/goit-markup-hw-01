@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-    <title>Студия</title>
+    <title>WebStudio</title>
 </head>
 
 <body>
@@ -27,51 +27,52 @@
 
         <ul class="right-nav">
             <li class="contact-type">
-                <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="contact-email">info@devstudio.com</a>
             </li>
             <li class="contact-type">
-                <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="contact-tel">+38 096 111 11 11</a>
             </li>
         </ul>
     </header>
-    <!-- Section order service -->
-    <div class="order-service">
-        <h1 class="main-service">
-            Эффективные решения
-            <br /> для вашего бизнеса
-        </h1>
-        <button type="button">Заказать услугу</button>
-    </div>
     <!-- Main Content -->
     <main class="main">
+        <!-- Section order service -->
+        <section class="order-service">
+            <h1 class="main-service">
+                Эффективные решения
+                <br /> для вашего бизнеса
+            </h1>
+            <button type="button">Заказать услугу</button>
+        </section>
+
         <!-- Section Features -->
         <section class="main-features">
             <h2>Особенности</h2>
 
-            <ul class="features">
-                <li class="features1">
-                    <h2 class="features-name">Внимание к деталям</h2>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <h3 class="features-name">Внимание к деталям</h3>
                     <p class="features-text">
                         Идейные соображения, а также начало повседневной работы по формированию позиции.
                     </p>
                 </li>
 
-                <li class="features2">
-                    <h2 class="features-name">Пунктуальность</h2>
+                <li class="feature-item">
+                    <h3 class="features-name">Пунктуальность</h3>
                     <p class="features-text">
                         Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                     </p>
                 </li>
 
-                <li class="features3">
-                    <h2 class="features-name">Планирование</h2>
+                <li class="feature-item">
+                    <h3 class="features-name">Планирование</h3>
                     <p class="features-text">
                         Равным образом консультация с широким активом в значительной степени обуславливает.
                     </p>
                 </li>
 
-                <li class="features4">
-                    <h2 class="features-name">Современные технологии</h2>
+                <li class="feature-item">
+                    <h3 class="features-name">Современные технологии</h3>
                     <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
@@ -79,9 +80,11 @@
         <!-- Section what we do -->
         <section class="work">
             <h2 class="work-text">Чем мы занимаемся</h2>
-            <img src="images/box1.jpg" alt="Разработка кода приложения" width="370" />
-            <img src="images/box2.jpg" alt="Разработка мобильного приложения" width="370" />
-            <img src="images/box3.jpg" alt="Разработка дизайна" width="370" />
+            <ul class="work-list">
+                <li class="work-item"><img src="images/box1.jpg" alt="Разработка приложения" width="370" /></li>
+                <li class="work-item"><img src="images/box2.jpg" alt="Разработка мобильного приложения" width="370" /></li>
+                <li class="work-item"><img src="images/box3.jpg" alt="Разработка дизайна" width="370" /></li>
+            </ul>
         </section>
         <!-- Our team -->
         <section class="our-team">
@@ -90,35 +93,39 @@
                 <li class="photo-team">
                     <img src="images/img.jpg" alt="Фото Игорь Демьяненко" width="270" />
                     <h3 class="name-of-team">Игорь Демьяненко</h3>
-                    <p class="prof-position">Product Designer</p>
+                    <p lang="en" class="prof-position">Product Designer</p>
                 </li>
 
                 <li class="photo-team">
                     <img src="images/img1.jpg" alt="Фото Ольга Репина" width="270" />
                     <h3 class="name-of-team">Ольга Репина</h3>
-                    <p class="prof-position">Frontend Developer</p>
+                    <p lang="en" class="prof-position">Frontend Developer</p>
                 </li>
 
                 <li class="photo-team">
                     <img src="images/img2.jpg" alt="Фото Николай Тарасов" width="270" />
                     <h3 class="name-of-team">Николай Тарасов</h3>
-                    <p class="prof-position">Marketing</p>
+                    <p lang="en" class="prof-position">Marketing</p>
                 </li>
 
                 <li class="photo-team">
                     <img src="images/img3.jpg" alt="Фото Михаил Ермаков" width="270" />
                     <h3 class="name-of-team">Михаил Ермаков</h3>
-                    <p class="prof-position">UI Designer</p>
+                    <p lang="en" class="prof-position">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <a href="#" class="logo-footer">WebStudio</a>
-        <address class="post-address">г. Киев, пр-т Леси Украинки, 26</address>
-        <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+        <address class="adress">
+				<ul class="contacts">
+					<li><a href="#" class="logo-footer">WebStudio</a></li>
+					<li><a href="#" class="post-address">г. Киев, пр-т Леси Украинки, 26</a></li>
+					<li><a href="mailto:info@devstudio.com" class="contact-email">info@devstudio.com</a></li>
+					<li><a href="tel:+380961111111" class="contact-tel">+38 096 111 11 11</a></li>
+				</ul>
+			</address>
     </footer>
 </body>
 
